@@ -14,7 +14,7 @@ A structured Python application to interact with the Binance Futures Testnet (US
 
 1. **Clone the Repository**
    ```bash
-   git clone <your-repo-link>
+   git clone https://github.com/Atharv012/TradingBot.git
    cd trading_bot
 
 2. **Environment Setup**
