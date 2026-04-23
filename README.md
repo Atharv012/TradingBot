@@ -29,7 +29,7 @@ A structured Python application to interact with the Binance Futures Testnet (US
 
 ## 📈 How to Run
 
-    **Option 1: Command Line Interface (CLI)**
+    1. **Command Line Interface (CLI)**
     ***Market Order:***
     ```bash
     python cli.py --symbol BTCUSDT --side BUY --type MARKET --qty 0.001
@@ -38,17 +38,17 @@ A structured Python application to interact with the Binance Futures Testnet (US
     ```bash
     python cli.py --symbol BTCUSDT --side SELL --type LIMIT --qty 0.001 --price 75000
 
-    **Option 2: Streamlit UI**
+    2. **Streamlit UI**
     ```bash
     streamlit run UI.py
 
 ## 📝 Assumptions & Notes
 
-    - **Lot Size**: The bot assumes the user provides a quantity that meets the symbol's minimum lot size requirements on the Binance Testnet (e.g., 0.001 for BTC).
+    **Lot Size**: The bot assumes the user provides a quantity that meets the symbol's minimum lot size requirements on the Binance Testnet (e.g., 0.001 for BTC).
 
-    - **Testnet**: The application is hardcoded to use the Binance Futures Testnet environment for safety.
+    **Testnet**: The application is hardcoded to use the Binance Futures Testnet environment for safety.
 
-    - **Logging**: JSON-formatted logs are used for API requests and responses to ensure high readability and traceability.
+    **Logging**: JSON-formatted logs are used for API requests and responses to ensure high readability and traceability.
 
 ## 📁 Project Structure
 
