@@ -48,7 +48,7 @@ A structured Python application to interact with the Binance Futures Testnet (US
 
 **Testnet**: The application is hardcoded to use the Binance Futures Testnet environment for safety.
 
-**Logging**: JSON-formatted logs are used for API requests and responses to ensure high readability and traceability.
+**Logging**: Request logs are used for API requests and responses to ensure high readability and traceability.
 
 ## 📁 Project Structure
 
