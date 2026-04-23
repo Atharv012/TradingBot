@@ -12,55 +12,54 @@ A structured Python application to interact with the Binance Futures Testnet (US
 
 ## 🛠️ Setup Instructions
 
-1. **Clone the Repository**
+1. **Clone the Repository:**
    ```bash
-   git clone <your-repo-link>
+   git clone https://github.com/Atharv012/TradingBot.git
    cd trading_bot
 
-2. **Environment Setup**
+2. **Environment Setup:**
     Create a virtual environment and install dependencies:
     ```bash
     python -m venv venv
     source venv/bin/activate  # On Windows: venv\Scripts\activate
     pip install -r requirements.txt
 
-3. **API Credentials**
+3. **API Credentials:**
     Create a .env file and place the API_KEY and API_SECRET there for running the bot via cli or enter them directly in the Streamlit sidebar. Ensure you are using Binance Futures Testnet keys.
 
 ## 📈 How to Run
 
-    **Option 1: Command Line Interface (CLI)**
-    ***Market Order:***
-    ```bash
-    python cli.py --symbol BTCUSDT --side BUY --type MARKET --qty 0.001
+#### Option 1: Command Line Interface (CLI)
+    
+***Market Order:*** 
 
-    ***Limit Order:***
-    ```bash
-    python cli.py --symbol BTCUSDT --side SELL --type LIMIT --qty 0.001 --price 75000
+```python cli.py --symbol BTCUSDT --side BUY --type MARKET --qty 0.001```
 
-    **Option 2: Streamlit UI**
-    ```bash
-    streamlit run UI.py
+***Limit Order:*** 
+
+```python cli.py --symbol BTCUSDT --side SELL --type LIMIT --qty 0.001 --price 75000```
+
+#### Option 2: Streamlit UI** 
+```streamlit run UI.py```
 
 ## 📝 Assumptions & Notes
 
-    - **Lot Size**: The bot assumes the user provides a quantity that meets the symbol's minimum lot size requirements on the Binance Testnet (e.g., 0.001 for BTC).
+**Lot Size**: The bot assumes the user provides a quantity that meets the symbol's minimum lot size requirements on the Binance Testnet (e.g., 0.001 for BTC).
 
-    - **Testnet**: The application is hardcoded to use the Binance Futures Testnet environment for safety.
+**Testnet**: The application is hardcoded to use the Binance Futures Testnet environment for safety.
 
-    - **Logging**: JSON-formatted logs are used for API requests and responses to ensure high readability and traceability.
+**Logging**: JSON-formatted logs are used for API requests and responses to ensure high readability and traceability.
 
 ## 📁 Project Structure
 
-    **bot/client.py**: Handles connection and authentication.
+* **bot/client.py**: Handles connection and authentication.
 
-    **bot/orders.py**: Core logic for order placement and response handling.
+* **bot/orders.py**: Core logic for order placement and response handling.
 
-    **bot/validators.py**: Input scrubbing and error prevention.
+* **bot/validators.py**: Input scrubbing and error prevention.
 
-    **bot/logging_config.py**: Centralized logging configuration.
+* **bot/logging_config.py**: Centralized logging configuration.
 
-    **cli.py**: The main entry point for command-line usage.
+* **cli.py**: The main entry point for command-line usage.
 
-    **UI.py**: The web UI wrapper.
-
+* **UI.py**: The web UI wrapper.
